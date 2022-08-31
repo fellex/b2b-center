@@ -30,6 +30,12 @@ foreach ($data as $user_id=>$name) {
 */
 
 
+/**
+ * Функция возвращает имена пользователей по указанным ids
+ * @param string $user_ids - ids пользователей через запятую
+ * @return array $data - массив имен пользователей
+ *
+ */
 function load_users_data($user_ids) {
     $data = []; // объявили переменную с пустым массивом
     if($user_ids == '' || is_null($user_ids)) { // если входные данные пустые, сразу вернем пустой массив
